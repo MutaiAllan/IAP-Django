@@ -14,3 +14,6 @@ def current_datetime(request):
 
 def greet(request, name):
     return HttpResponse(f"Hello {name}!")
+
+def temp(request):
+    return render(request, "index.html")
