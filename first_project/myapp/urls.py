@@ -6,5 +6,6 @@ urlpatterns=[
     path("about", views.index,name='index'),
     path("time", views.current_datetime, name='current_datetime'),
     path("name/<str:name>", views.greet, name='greet'),
-    path("temp", views.temp, name='temp')
+    path("temp", views.temp, name='temp'),
+    path("hello", views.hello, name='hello')
 ]

@@ -17,3 +17,6 @@ def greet(request, name):
 
 def temp(request):
     return render(request, "index.html")
+
+def hello(request, name):
+    return render(request,"greet.html", {"name": name.capitalize()})
